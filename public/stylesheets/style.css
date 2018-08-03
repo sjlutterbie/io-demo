@@ -1,8 +1,40 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  height: 100vh;
 }
 
-a {
-  color: #00B7FF;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #fff;
+  min-height: 50px;
+  height: 10vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+footer {
+ height: 5vh;
+ min-height: 20px;
+ background: #fff;
+ border-top: 1px solid #ccc;
+}
+
+.sidebar {
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.main-content {
+  background: #fff;
+  height: 85vh;
+  border-top: 1px solid #ccc;
 }
