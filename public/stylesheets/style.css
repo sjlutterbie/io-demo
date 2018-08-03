@@ -9,10 +9,14 @@ body {
 }
 
 header {
-  background: #fff;
+  background: rgba(0,51,117,.9);
   min-height: 50px;
   height: 10vh;
 }
+
+  header img {
+    padding: 5px;
+  }
 
 main {
   display: flex;
@@ -23,7 +27,8 @@ main {
 footer {
  height: 5vh;
  min-height: 20px;
- background: #fff;
+ color: #fff;
+ background: rgba(0,51,117,.9);
  border-top: 1px solid #ccc;
 }
 

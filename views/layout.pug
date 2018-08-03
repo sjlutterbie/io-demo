@@ -20,22 +20,20 @@ htmp(lang="en")
         
         title IO Demo
     body
-        header
-            h1 Header
+        include includes/header.pug
         
         // Begin page content
         main.container-fluid(role="main")
             div.row
                 // Sidebar navigation
                 div.sidebar.col-xs-12.col-sm-12.col-md-12.col-lg-2
-                    h2 Sidebar
+                    include includes/sidebar.pug
                 // Main content
                 div.main-content.col-xs-12.col-sm-12.col-md-12.col-lg-10
-                    h2 Main content
                     block content
         
         footer
-            h2 footer
+            include includes/footer.pug
         
         script(
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js",
