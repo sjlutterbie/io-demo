@@ -1,7 +1,25 @@
-nav.nav.nav-tabs
-    h2 Current Project Name
-    a.nav-item.nav-link(href="#") Project Settings
+h2.text-center Current Project Name
+
+
+
+//Dropdown menu for small displays
+a.dropdown-toggle.nav-link.d-sm-none.text-center(
+    data-toggle="collapse",
+    href="#smallProjectTabs",
+    role="button",
+    aria-expanded="false",
+    aria-controls="smallProjectTabs")
+    | Project Tabs
+div.collapse(id="smallProjectTabs").text-center
+    a.dropdown-item(href="#") Project Dashboard
+    a.dropdown-item(href="#") Individuals
+    a.dropdown-item(href="#") Teams
+    a.dropdown-item(href="#") Organization
+
+
+//Tabbed menu for sm+ size screens
+nav.nav.nav-tabs.justify-content-center.collapse.d-none.d-sm-flex
+    a.nav-item.nav-link(href="#") Project Dashboard
     a.nav-item.nav-link.active(href="#") Individuals
     a.nav-item.nav-link(href="#") Teams
     a.nav-item.nav-link(href="#") Organization
-    
