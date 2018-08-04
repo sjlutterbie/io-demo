@@ -8,12 +8,17 @@ http(lang="en")
         
         div.container-fluid
             div.row.flex-xl-nowrap
+            
+                // Sidebar navigation
                 include includes/sidebar.pug
                 
-                
-                    
+                // Main content area
                 div.main-content.col-xs-12.col-sm-12.col-md-12.col-lg-10
-                    //include includes/sidebar.pug
+                
+                    //Main content top tabs
+                    include includes/main-content-tabs.pug
+                    
+                    //Main content
                     block content
     
     footer
