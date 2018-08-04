@@ -1,18 +1,39 @@
-div.col-12.col-md-3.col-xl-2
-    p Current Projects
-    ul
-        li
-            a(href="#") Alpha Inc.
-        li
-            a(href="#") Beta Corp.
-        li   
-            a(href="#") Gamma Group
-    hr
-    p Archive
-    ul
-        li
-            a(href="#") Microsoft
-        li
-            a(href="#") Apple
-        li
-            a(href="#") Google
+div.col-12.col-md-3.col-xl-2.io-sidebar
+    nav.nav.flex-column
+        
+        hr
+        
+        //Commission a Report
+        button.btn.btn-primary(type="Button") Commission a Project
+        
+        hr
+        
+        // Active Projects
+        li.nav-item
+            a.dropdown-toggle.nav-link(
+                data-toggle="collapse",
+                href="#activeProjects",
+                role="button",
+                aria-expanded="false",
+                aria-controls="activeProjects")
+                | Active Projects
+            div.collapse.show(id="activeProjects")
+                a.dropdown-item(href="#") Alpha Inc.
+                a.dropdown-item(href="#") Beta Corp.
+                a.dropdown-item(href="#") Gamma Group
+        
+        //Archived Projects    
+        li.nav-item
+            a.dropdown-toggle.nav-link(
+                data-toggle="collapse",
+                href="#archivedProjects",
+                role="button",
+                aria-expanded="false",
+                aria-controls="archivedProjects")
+                | Active Projects
+            div.collapse(id="archivedProjects")
+                a.dropdown-item(href="#") Microsoft
+                a.dropdown-item(href="#") Apple
+                a.dropdown-item(href="#") Google
+        
+        
