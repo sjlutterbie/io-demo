@@ -29,6 +29,14 @@ footer {
   border-right: 1px solid #ccc;
 }
 
+  /* Prevent "Commission Project" button from taking full width */
+  .com-proj-button {
+    margin: auto;
+    max-width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
 .main-content {
   background: #fff;
   height: 85vh;
