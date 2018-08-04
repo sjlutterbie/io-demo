@@ -1,9 +1,9 @@
-header.top-nav.navbar.navbar-expand.flex-column.flex-md-row.navbar-dark
+header.top-nav.navbar.navbar-expand.flex-column.flex-lg-row.navbar-dark
     a.navbar-brand(href="#", target="_blank")
         img.header-img(src="https://www.friendshipcircle.org/wp-content/uploads/2016/09/fake-logo.png")
         |   Sample Dashboard
-    div.navbar-nav-scroll
-        ul.navbar-nav.flex-row
+    div.navbar-nav-scroll.d-flex.ml-lg-auto
+        ul.navbar-nav.flex-column.flex-sm-row.text-center
             li.nav-item
                 a.nav-link(href="#") Home
             li.nav-item
@@ -12,18 +12,16 @@ header.top-nav.navbar.navbar-expand.flex-column.flex-md-row.navbar-dark
                 a.nav-link(href="#") Research
             li.nav-item
                 a.nav-link(href="#") Knowledgebase
-
-    ul.navbar-nav.flex-row.ml-md-auto.d-none.d-md-flex
-        li.nav-item.dropdown
-            a.nav-item.nav-link.dropdown-toggle.mr-md-2(
-                href="#",
-                data-toggle="dropdown",
-                aria-haspopup="true",
-                aria-expanded="false") Account
-            div.dropdown-menu.dropdown-menu-right
-                a.dropdown-item(href="#") Account Settings
-                a.dropdown-item(href="#") Billing History
-                a.dropdown-item(href="#") Contact Support
-                div.dropdown-divider
-                a.dropdown-item(href="#") Sign out
+            li.nav-item.dropdown
+                a.nav-item.nav-link.dropdown-toggle(
+                    href="#",
+                    data-toggle="dropdown",
+                    aria-haspopup="true",
+                    aria-expanded="false") Account
+                div.dropdown-menu.dropdown-menu-right.dropdown-menu-right.text-center
+                    a.dropdown-item(href="#") Account Settings
+                    a.dropdown-item(href="#") Billing History
+                    a.dropdown-item(href="#") Contact Support
+                    div.dropdown-divider
+                    a.dropdown-item(href="#") Sign out
     
