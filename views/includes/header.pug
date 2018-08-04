@@ -1,3 +1,17 @@
-header
-    a(href="http://www.iopenerinstitute.com", target="_blank")
-        img(src="https://iopenerinstitute.com/wp-content/uploads/2016/03/iOpener-header-logo.png")
+header.d-flex
+    nav.navbar.navbar-expand-md.navbar-expand-lg.navbar-expand-xl
+        ul.navbar-nav.navbar-light
+            li.nav-item.navbar-brand
+                a(href="http://www.iopenerinstitute.com", target="_blank")
+                    img(src="https://iopenerinstitute.com/wp-content/uploads/2016/03/iOpener-header-logo.png")
+            li.nav-item
+                a.nav-link(data-toggle="pill", href="") Homepage
+            each val in [1, 2, 3, 4, 5]
+                li.nav-item
+                    a.nav-link(href="/" + val)= "Link" + val
+            li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href="#", id="navbarDropdown", role="button", data-toggle="dropdown") Dropdown
+                div.dropdown-menu
+                    a.dropdown-item Dropdown 1
+                    a.dropdown-item Dropdown 2
+
