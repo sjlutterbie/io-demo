@@ -4,6 +4,8 @@ div.col-12.col-md-auto.io-sidebar
         //Commission a Report
         a.btn.btn-primary.btn-sm.com-proj-button(href="#", role="Button") Commission Project
         
+        a.nav-item.nav-link(href="/") User Dashboard
+        
         // Active Projects
         li.nav-item
             a.dropdown-toggle.nav-link(
@@ -14,9 +16,9 @@ div.col-12.col-md-auto.io-sidebar
                 aria-controls="activeProjects")
                 | Active Projects
             div.collapse.show(id="activeProjects")
-                a.dropdown-item(href="#") Alpha Inc.
-                a.dropdown-item(href="#") Beta Corp.
-                a.dropdown-item(href="#") Gamma Group
+                a.dropdown-item(href="/project?title=Alpha%20Inc.") Alpha Inc.
+                a.dropdown-item(href="/project?title=Beta%20Corp.") Beta Corp.
+                a.dropdown-item(href="/project?title=Gamma%20Group") Gamma Group
         
         //Archived Projects    
         li.nav-item
